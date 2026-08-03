@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pascal Lantam Gbate — Full-Stack Developer & Business Support Specialist</title>
+<meta name="description" content="Portfolio of Cyril Pascal — full-stack web developer and business support specialist based in Wa, Ghana. HTML, CSS, JavaScript, Node.js, Express, MongoDB, plus Word, Excel and PowerPoint." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV — styled as open file tabs, merging document + code file types ============ -->
+<header class="tabbar" id="tabbar">
+  <div class="tabbar__brand">
+    <span class="tabbar__mark">PL</span>
+    <span class="tabbar__name">Pascal Lantam Gbate</span>
+  </div>
+
+  <nav class="tabbar__tabs" id="tabNav" aria-label="Primary">
+    <a href="#about" class="tab" data-tab data-section="about"><span class="tab__ext">about</span><span class="tab__type">.docx</span></a>
+    <a href="#skills" class="tab" data-tab data-section="skills"><span class="tab__ext">skills</span><span class="tab__type">.js</span></a>
+    <a href="#projects" class="tab" data-tab data-section="projects"><span class="tab__ext">projects</span><span class="tab__type">.xlsx</span></a>
+    <a href="#experience" class="tab" data-tab data-section="experience"><span class="tab__ext">experience</span><span class="tab__type">.log</span></a>
+    <a href="#services" class="tab" data-tab data-section="services"><span class="tab__ext">services</span><span class="tab__type">.md</span></a>
+    <a href="#contact" class="tab" data-tab data-section="contact"><span class="tab__ext">contact</span><span class="tab__type">.pptx</span></a>
+  </nav>
+
+  <button class="tabbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid">
+      <p class="hero__eyebrow">Wa, Upper West Region — Ghana</p>
+      <h1 class="hero__title">
+        I build the <span class="hero__accent hero__accent--blue">software</span>
+        and write the <span class="hero__accent hero__accent--gold">paperwork</span>
+        that makes a business run.
+      </h1>
+      <p class="hero__lede">
+        Pascal Lantam Gbate — full-stack web &amp; mobile developer, business support specialist,
+        and mentor. I ship products with Node.js, Express and MongoDB, build mobile apps,
+        handle the reports and decks that go around them, and teach beginners how to do
+        the same.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View work</a>
+        <a href="/cv.pdf" class="btn btn--ghost" download>Download CV</a>
+        <a href="#contact" class="btn btn--text">Get in touch →</a>
+      </div>
+    </div>
+
+    <div class="hero__panel" aria-hidden="true">
+      <div class="hero__panel-bar">
+        <span class="dot dot--blue"></span>
+        <span class="dot dot--gold"></span>
+        <span class="dot dot--green"></span>
+        <span class="hero__panel-title">stack.config</span>
+      </div>
+      <pre class="hero__code"><code><span class="code-key">frontend</span>: [<span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"JavaScript"</span>],
+<span class="code-key">backend</span>:  [<span class="code-str">"Node.js"</span>, <span class="code-str">"Express"</span>, <span class="code-str">"PHP"</span>],
+<span class="code-key">database</span>: [<span class="code-str">"MongoDB"</span>, <span class="code-str">"MySQL"</span>],
+<span class="code-key">mobile</span>:   [<span class="code-str">"Mobile app development"</span>],
+<span class="code-key">also</span>:     [<span class="code-str">"Python"</span>, <span class="code-str">"WordPress"</span>],
+<span class="code-key">office</span>:   [<span class="code-str">"Word"</span>, <span class="code-str">"Excel"</span>, <span class="code-str">"PowerPoint"</span>],
+<span class="code-key">mentors</span>:  <span class="code-str">"web dev · Excel · PPT · Word"</span>,
+<span class="code-key">based_in</span>: <span class="code-str">"Wa, Ghana"</span>,
+<span class="code-key">open_to</span>: <span class="code-str">"junior roles + freelance"</span></code></pre>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__tag">about.docx</span>
+      <h2 class="section__title">About</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__photo" aria-hidden="true">
+         <img src="images/profile.jpg" alt="Pascal Lantam Gbate"> 
+        
+      </div>
+
+      <div class="about__body">
+        <p>
+          I'm a Level 300 Computer Science student at the University of Business and
+          Integrated Development Studies (UBIDS) in Wa, and a self-taught full-stack
+          developer. I founded <strong>PascalLinks</strong>, a digital services platform,
+          and <strong>StoreLinks</strong>, a multi-vendor e-commerce marketplace — both
+          built to solve real problems for people in Ghana, not just to look good on a résumé.
+        </p>
+        <p>
+          Right now I'm on industrial attachment at <strong>Noni Hub</strong> in Wa, where I
+          facilitate web development training and work on project builds. Outside of code,
+          I handle the side of the work most developers skip: formatting a clean report in
+          Word, building a dashboard in Excel that a non-technical manager can actually read,
+          or putting together a pitch deck that gets a founder through an investor meeting.
+        </p>
+        <p>
+          I also build mobile apps, and I mentor people who are just starting out —
+          walking beginners through web development, Excel, PowerPoint and Word until
+          they can build things on their own, not just follow along.
+        </p>
+        <p>
+          That combination — able to build the product, present it, and teach someone
+          else to do it — is what I bring to a team.
+        </p>
+
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num">2+</span>
+            <span class="stat__label">Years building web apps</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">2</span>
+            <span class="stat__label">Products founded</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">300</span>
+            <span class="stat__label">Level, B.Sc. Computer Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <span class="section__tag">skills.js</span>
+      <h2 class="section__title">Skills</h2>
+    </div>
+
+    <div class="skills__grid">
+
+      <!-- Dev skills — terminal styling -->
+      <div class="skillpane skillpane--dev">
+        <div class="skillpane__bar">
+          <span class="dot dot--blue"></span><span class="dot dot--gold"></span><span class="dot dot--green"></span>
+          <span class="skillpane__title">~/development</span>
+        </div>
+        <div class="skillpane__body">
+          <ul class="skilllist">
+            <li class="skillitem"><span class="skillitem__prompt">&gt;</span><span class="skillitem__name">HTML5 &amp; CSS3</span><span class="bar"><span class="bar__fill" style="width:92%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__prompt">&gt;</span><span class="skillitem__name">JavaScript (ES6+)</span><span class="bar"><span class="bar__fill" style="width:88%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__prompt">&gt;</span><span class="skillitem__name">Node.js &amp; Express</span><span class="bar"><span class="bar__fill" style="width:85%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__prompt">&gt;</span><span class="skillitem__name">MongoDB &amp; Mongoose</span><span class="bar"><span class="bar__fill" style="width:82%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__prompt">&gt;</span><span class="skillitem__name">REST APIs &amp; JWT Auth</span><span class="bar"><span class="bar__fill" style="width:80%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__prompt">&gt;</span><span class="skillitem__name">Git &amp; version control</span><span class="bar"><span class="bar__fill" style="width:83%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__prompt">&gt;</span><span class="skillitem__name">Mobile app development</span><span class="bar"><span class="bar__fill" style="width:70%"></span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Office skills — ribbon styling -->
+      <div class="skillpane skillpane--office">
+        <div class="skillpane__bar skillpane__bar--office">
+          <span class="skillpane__title">Office &amp; Productivity</span>
+        </div>
+        <div class="skillpane__body">
+          <ul class="skilllist">
+            <li class="skillitem"><span class="skillitem__icon">W</span><span class="skillitem__name">Microsoft Word — reports, templates, mail merge</span><span class="bar"><span class="bar__fill bar__fill--gold" style="width:90%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__icon">X</span><span class="skillitem__name">Microsoft Excel — formulas, pivot tables, dashboards</span><span class="bar"><span class="bar__fill bar__fill--gold" style="width:87%"></span></span></li>
+            <li class="skillitem"><span class="skillitem__icon">P</span><span class="skillitem__name">Microsoft PowerPoint — pitch decks, data storytelling</span><span class="bar"><span class="bar__fill bar__fill--gold" style="width:85%"></span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Also working with — full-width tag row -->
+      <div class="skillpane skillpane--extra">
+        <div class="skillpane__bar">
+          <span class="dot dot--blue"></span><span class="dot dot--gold"></span><span class="dot dot--green"></span>
+          <span class="skillpane__title">~/also-working-with</span>
+        </div>
+        <div class="skillpane__body">
+          <div class="tagcloud">
+            <span class="tagchip">Python</span>
+            <span class="tagchip">MySQL</span>
+            <span class="tagchip">PHP</span>
+            <span class="tagchip">WordPress</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__tag">projects.xlsx</span>
+      <h2 class="section__title">Selected work</h2>
+    </div>
+
+    <div class="filterbar" role="tablist" aria-label="Filter projects">
+      <button class="filter" data-filter="all" aria-selected="true">All</button>
+      <button class="filter" data-filter="development" aria-selected="false">Development</button>
+      <button class="filter" data-filter="office" aria-selected="false">Office &amp; Documents</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+      <!-- Injected by script.js from /api/projects. Static fallback cards below render if the request fails. -->
+      <noscript>
+        <div class="project-card">
+          <h3>PascalLinks</h3>
+          <p>A live digital services platform connecting clients to web, design and business-support services.</p>
+        </div>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--alt" id="experience">
+    <div class="section__head">
+      <span class="section__tag">experience.log</span>
+      <h2 class="section__title">Experience</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item">
+        <span class="timeline__date">2026 — Present</span>
+        <h3 class="timeline__title">Industrial Attachment — Noni Hub, Wa</h3>
+        <p class="timeline__desc">Facilitating web development training for students, contributing to project development, and supporting platform builds for community learning initiatives.</p>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__date">2024 — Present</span>
+        <h3 class="timeline__title">Founder — PascalLinks</h3>
+        <p class="timeline__desc">Built and maintain a live digital services platform, handling everything from backend architecture to client delivery.</p>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__date">2024 — Present</span>
+        <h3 class="timeline__title">Founder — StoreLinks</h3>
+        <p class="timeline__desc">Designed and built a multi-vendor e-commerce marketplace with vendor accounts, product listings and order handling.</p>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__date">2023 — Present</span>
+        <h3 class="timeline__title">B.Sc. Computer Science — UBIDS, Wa</h3>
+        <p class="timeline__desc">Level 300 student, coursework spanning systems analysis, backend development, and applied programming.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="section__head">
+      <span class="section__tag">services.md</span>
+      <h2 class="section__title">What I can do for you</h2>
+    </div>
+
+    <div class="services__grid">
+      <div class="service">
+        <span class="service__mark service__mark--blue">&lt;/&gt;</span>
+        <h3>Website development</h3>
+        <p>Custom websites and web apps built with HTML, CSS, JavaScript, and a Node/Express/MongoDB backend when you need one.</p>
+      </div>
+      <div class="service">
+        <span class="service__mark service__mark--gold">W</span>
+        <h3>Document &amp; report formatting</h3>
+        <p>Clean, professional Word documents — reports, proposals, templates — formatted the way a client expects to receive them.</p>
+      </div>
+      <div class="service">
+        <span class="service__mark service__mark--gold">X</span>
+        <h3>Data analysis &amp; dashboards</h3>
+        <p>Excel dashboards and spreadsheets that turn raw numbers into something a manager can actually use to make decisions.</p>
+      </div>
+      <div class="service">
+        <span class="service__mark service__mark--gold">P</span>
+        <h3>Presentation design</h3>
+        <p>Pitch decks and slide presentations built for clarity — the kind that hold up in front of investors or a board.</p>
+      </div>
+      <div class="service">
+        <span class="service__mark service__mark--blue">▣</span>
+        <h3>Mobile app development</h3>
+        <p>Mobile apps built to match a business's actual workflow, not a generic template.</p>
+      </div>
+      <div class="service">
+        <span class="service__mark service__mark--blue">M</span>
+        <h3>Mentorship &amp; training</h3>
+        <p>One-on-one and group coaching in web development, Excel, PowerPoint and Word — for beginners who want to build real things, not just watch tutorials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section--alt" id="testimonials">
+    <div class="section__head">
+      <span class="section__tag">testimonials.txt</span>
+      <h2 class="section__title">Client feedback</h2>
+    </div>
+
+    <div class="empty-state">
+      <p class="empty-state__title">This section is waiting on its first entries.</p>
+      <p class="empty-state__body">Testimonials from clients and collaborators will appear here as projects wrap up. If you've worked with me, a short quote is always welcome.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section__head">
+      <span class="section__tag">contact.pptx</span>
+      <h2 class="section__title">Let's talk</h2>
+    </div>
+
+    <div class="contact__grid">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required maxlength="100" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required maxlength="150" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required maxlength="2000"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" id="submitBtn">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-side">
+        <p class="contact-side__lede">Based in Wa, Upper West Region, Ghana. Open to junior developer roles, IT/business-support work, and freelance projects.</p>
+        <ul class="social-list">
+          <!-- Replace href values with real profile links -->
+          <li><a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://wa.me/233000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:you@pascallinks.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Cyril Pascal. Built with HTML, CSS, JavaScript, Node.js &amp; MongoDB.</p>
+  <ul class="footer__links">
+    <li><a href="#hero">Top</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
