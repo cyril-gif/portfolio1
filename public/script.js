@@ -1,4 +1,12 @@
 // ============================================================
+// Backend API base URL
+// Points directly at the Render backend so the site works whether
+// the HTML is served from Render itself or from a separate host
+// like Vercel (which can't run the Express server).
+// ============================================================
+const API_BASE = 'https://portfolio1-3yq0.onrender.com';
+
+// ============================================================
 // Footer year
 // ============================================================
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -114,7 +122,7 @@ function renderProjects(projects) {
 
 async function loadProjects() {
   try {
-    const res = await fetch('/api/projects');
+    const res = await fetch(`${API_BASE}/api/projects`);
     const json = await res.json();
     if (json.success) {
       allProjects = json.data;
@@ -157,7 +165,7 @@ contactForm.addEventListener('submit', async (e) => {
   formStatus.className = 'form-status';
 
   try {
-    const res = await fetch('/api/contact', {
+    const res = await fetch(`${API_BASE}/api/contact`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
