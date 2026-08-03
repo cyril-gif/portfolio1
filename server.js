@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 
 import contactRoutes from './routes/contact.js';
 import projectRoutes from './routes/projects.js';
+import askRoutes from '.routes/asl.js';
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // API routes
 app.use('/api/contact', contactRoutes);
 app.use('/api/projects', projectRoutes);
+app.use('/api/ask', askRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
