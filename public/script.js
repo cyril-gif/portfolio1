@@ -157,6 +157,7 @@ const chatInput = document.getElementById('chatInput');
 const chatMessages = document.getElementById('chatMessages');
 
 let chatHistory = [];
+const chatSuggest = document.getElementById('chatSuggest');
 
 function openChat() {
   chatPanel.hidden = false;
@@ -184,11 +185,10 @@ function addChatMessage(text, sender) {
   return el;
 }
 
-chatForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const question = chatInput.value.trim();
+async function sendChatMessage(question) {
   if (!question) return;
 
+  chatSuggest.classList.add('is-hidden');
   addChatMessage(question, 'user');
   chatInput.value = '';
   chatInput.disabled = true;
@@ -220,6 +220,16 @@ chatForm.addEventListener('submit', async (e) => {
     chatInput.disabled = false;
     chatInput.focus();
   }
+}
+
+chatSuggest.querySelectorAll('.chat-suggest__item').forEach((btn) => {
+  btn.addEventListener('click', () => sendChatMessage(btn.dataset.q));
+});
+
+chatForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const question = chatInput.value.trim();
+  sendChatMessage(question);
 });
 
 // ============================================================
