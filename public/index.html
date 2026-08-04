@@ -89,7 +89,7 @@
 
     <div class="about__grid">
       <div class="about__photo">
-        <img src="/images/pass.png" alt="Cyril Pascal" />
+        <img src="/images/profile.jpg" alt="Cyril Pascal" />
       </div>
 
       <div class="about__body">
@@ -372,7 +372,14 @@
       <button class="chatwidget__close" id="chatClose" aria-label="Close chat">&times;</button>
     </div>
     <div class="chatwidget__messages" id="chatMessages">
-      <div class="chatmsg chatmsg--bot">Hi! I can answer questions about Pascal — his skills, projects, or experience. What do you want to know?</div>
+      <div class="chatmsg chatmsg--bot">Hi! I can answer questions about Pascal — his skills, projects, or experience. Ask anything, or try one below.</div>
+      <div class="chat-suggest" id="chatSuggest">
+        <button type="button" class="chat-suggest__item" data-q="Who is Pascal?">Who is Pascal?</button>
+        <button type="button" class="chat-suggest__item" data-q="What has he built?">What has he built?</button>
+        <button type="button" class="chat-suggest__item" data-q="What services does he offer?">What services does he offer?</button>
+        <button type="button" class="chat-suggest__item" data-q="What's his tech stack?">What's his tech stack?</button>
+        <button type="button" class="chat-suggest__item" data-q="How do I contact him?">How do I contact him?</button>
+      </div>
     </div>
     <form class="chatwidget__form" id="chatForm">
       <input type="text" id="chatInput" placeholder="Ask something about Pascal…" autocomplete="off" maxlength="300" />
