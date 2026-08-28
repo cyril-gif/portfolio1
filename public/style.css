@@ -749,6 +749,24 @@ input, textarea { font: inherit; color: inherit; }
 }
 .chatmsg--typing { font-family: var(--font-mono); color: var(--text-dim); font-style: italic; }
 
+.chat-suggest {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+.chat-suggest__item {
+  text-align: left;
+  font-size: 0.82rem;
+  color: var(--gold);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  transition: border-color var(--transition), background var(--transition);
+}
+.chat-suggest__item:hover { border-color: var(--gold); background: var(--surface-raised); }
+.chat-suggest.is-hidden { display: none; }
+
 .chatwidget__form {
   display: flex;
   border-top: 1px solid var(--border);
@@ -781,9 +799,9 @@ input, textarea { font: inherit; color: inherit; }
     height: 380px;
     max-height: 60vh;
   }
-  .chatwidget__toggle { padding: 12px 18px; font-size: 0.85rem; }
+  .chatwidget__toggle-text { display: none; }
+  .chatwidget__toggle { padding: 14px; }
 }
-
 
 /* =========================================================
    RESPONSIVE
