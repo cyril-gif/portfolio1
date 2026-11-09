@@ -829,8 +829,10 @@ input, textarea { font: inherit; color: inherit; }
   border: none;
   padding: 14px 16px;
   color: var(--text);
-  font-size: 0.88rem;
+  /* 16px minimum: anything smaller makes iPhone Safari zoom the whole page when the field is tapped */
+  font-size: 16px;
 }
+
 .chatwidget__form input:focus { outline: none; }
 .chatwidget__form input:disabled { opacity: 0.5; }
 .chatwidget__form button {
